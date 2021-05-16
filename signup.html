@@ -1,0 +1,284 @@
+<html>
+  <head>
+    <title>AIT|Index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css"/>
+     <style>
+@font-face
+{
+    font-family: 'yash';
+    src: local('algerian'), url('../font/algerian.ttf') format('embedded-opentype'), url('../font/algerian.ttf') format('woff');
+}
+body
+{
+    margin: -5px;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'romen';
+    margin-left: 30px;
+    font-size: 47px;
+text-allignment: "center";
+padding:30px;
+color: red;
+
+
+}
+ul {
+  list-style-type: none;
+}
+.head a 
+{
+  color: white;
+  font-family:initial;
+  display: flex;
+  flex-direction: row; 
+}
+.head a:hover 
+{
+  text-decoration: none;
+  color: white;
+}
+.main {
+  background-color:rgb(47, 79, 79);
+  color: white;
+}
+
+.head 
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size:17px;
+}
+
+.head li{
+    display: flex;
+    flex-direction: row;
+}
+.new 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.new li
+{
+    margin-right: 15px;
+}
+
+.new i{
+    margin-right: 5px;
+    width: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.menu ul
+{
+    display: flex;
+    flex-direction: row;
+    background-color:red;
+}
+.menu li
+{
+    margin-left: 600px;
+    color: white;
+    font-size: 50px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.dropbtn
+{
+    background: transparent;
+    box-shadow: 0px;
+    border: 0px;
+    color: white;
+    height: 80px;
+}
+.dropbtn:hover
+{
+    color: white;
+}
+
+.dropbtn {
+    background: transparent;
+      color: black;
+      padding: 16px;
+      font-size: 25px;
+      border: none;
+    }
+    
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      font-size: 15px;
+      z-index: 333;  
+      /* z index is used for layer upwards or backwards */
+    }
+.dropdown-content a
+ {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  }
+  
+  .dropdown-content a:hover 
+  {
+  background-color:rgb(169, 169, 169) ;
+  color: white;
+transition: 0.5s ease;
+}
+
+.dropdown:hover .dropdown-content 
+{
+display:block;
+}
+
+
+
+
+
+
+/* Page Content */
+.content {padding:20px;}
+
+
+ 
+ 
+
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+
+
+
+.registerbtn 
+{  
+  background-color: #000000;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+
+}  
+
+
+
+
+
+</style>
+  </head>
+
+  
+
+  <body>
+    <div class="main">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <img
+            src="https://nptel.ac.in/content/college_assets/college_logo/3402_logo.png"
+            class="logo w-100"
+          />
+        </div>
+
+        <div class="col-12 col-md-10">
+          <h1>AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+     
+        </div>
+        </div>
+      </div>
+
+    <div class="main2">
+        <div class="menu">
+            <ul>
+                <li><div class="dropdown">
+                   <center> <button class="dropbtn">Menu</button></center>
+                     <div class="dropdown-content">
+                   <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+                      <a href="signup.html">Signup</a>
+                      <a href="gallary.html">Gallery</a>
+                      <a href="#">Students Section</a>
+                    </div>
+                    </div>
+                </li>
+    
+			
+                
+              
+                  
+                
+            </ul>
+        </div>
+   
+    </div>
+   
+
+
+
+
+
+
+  
+
+
+<form>  
+  
+  <div class="container">  
+   <center><u><h2>Registration Form</h2></u></center>
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+
+<label> Username: </label>    
+<input type="text" name="lastname" placeholder="Username" size="15"required />  
+<label>  
+<label> Password: </label>    
+<input type="password" name="lastname" placeholder="password" size="15"required />  
+<label>   
+
+
+
+ 
+Phone :  
+</label>  
+ <input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+ <label for="email">Email</label>  
+ <input type="text" placeholder="Enter Email" name="email" required>   
+ 
+
+
+
+<center><button type="submit" class="registerbtn">Register</button><br>    
+  <hr>
+<center><h1><a style="color:black;" href ="index.html">Back to home</a></h1></center>
+</form> 
+  
+</body>
+</html>
