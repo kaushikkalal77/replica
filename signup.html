@@ -3,17 +3,206 @@
     <title>AIT|Index</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-  
-   
-    
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css"/>
-     
+     <style>
+@font-face
+{
+    font-family: 'yash';
+    src: local('algerian'), url('../font/algerian.ttf') format('embedded-opentype'), url('../font/algerian.ttf') format('woff');
+}
+body
+{
+    margin: -5px;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'romen';
+    margin-left: 30px;
+    font-size: 47px;
+text-allignment: "center";
+padding:30px;
+color: red;
+
+
+}
+ul {
+  list-style-type: none;
+}
+.head a 
+{
+  color: white;
+  font-family:initial;
+  display: flex;
+  flex-direction: row; 
+}
+.head a:hover 
+{
+  text-decoration: none;
+  color: white;
+}
+.main {
+  background-color:rgb(47, 79, 79);
+  color: white;
+}
+
+.head 
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size:17px;
+}
+
+.head li{
+    display: flex;
+    flex-direction: row;
+}
+.new 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.new li
+{
+    margin-right: 15px;
+}
+
+.new i{
+    margin-right: 5px;
+    width: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.menu ul
+{
+    display: flex;
+    flex-direction: row;
+    background-color:red;
+}
+.menu li
+{
+    margin-left: 600px;
+    color: white;
+    font-size: 50px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.dropbtn
+{
+    background: transparent;
+    box-shadow: 0px;
+    border: 0px;
+    color: white;
+    height: 80px;
+}
+.dropbtn:hover
+{
+    color: white;
+}
+
+.dropbtn {
+    background: transparent;
+      color: black;
+      padding: 16px;
+      font-size: 25px;
+      border: none;
+    }
+    
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      font-size: 15px;
+      z-index: 333;  
+      /* z index is used for layer upwards or backwards */
+    }
+.dropdown-content a
+ {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  }
+  
+  .dropdown-content a:hover 
+  {
+  background-color:rgb(169, 169, 169) ;
+  color: white;
+transition: 0.5s ease;
+}
+
+.dropdown:hover .dropdown-content 
+{
+display:block;
+}
+
+
+
+
+
+
+/* Page Content */
+.content {padding:20px;}
+
+
+ 
+ 
+
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+
+
+
+.registerbtn 
+{  
+  background-color: #000000;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+
+}  
+
+
+
+
+
+</style>
   </head>
 
   
 
+  <body>
+    <div class="main">
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <img
+            src="https://nptel.ac.in/content/college_assets/college_logo/3402_logo.png"
+            class="logo w-100"
+          />
         </div>
 
         <div class="col-12 col-md-10">
@@ -29,8 +218,8 @@
                 <li><div class="dropdown">
                    <center> <button class="dropbtn">Menu</button></center>
                      <div class="dropdown-content">
-                   <a href="index.html">Home</a> 
-  <a href="login.html">Login</a>
+                   <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
                       <a href="signup.html">Signup</a>
                       <a href="gallary.html">Gallery</a>
                       <a href="#">Students Section</a>
@@ -47,132 +236,49 @@
         </div>
    
     </div>
-<div class="slideshow-container">
+   
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 12</div>
-  <img src="g1.jpg" style="width:100%">
+
+
+
+
+
   
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 12</div>
-  <img src="g2.jpg" style="width:100%">
+
+<form>  
   
-</div>
+  <div class="container">  
+   <center><u><h2>Registration Form</h2></u></center>
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 12</div>
-  <img src="g3.jpg" style="width:100%">
+<label> Username: </label>    
+<input type="text" name="lastname" placeholder="Username" size="15"required />  
+<label>  
+<label> Password: </label>    
+<input type="password" name="lastname" placeholder="password" size="15"required />  
+<label>   
+
+
+
+ 
+Phone :  
+</label>  
+ <input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+ <label for="email">Email</label>  
+ <input type="text" placeholder="Enter Email" name="email" required>   
+ 
+
+
+
+<center><button type="submit" class="registerbtn">Register</button><br>    
+  <hr>
+<center><h1><a style="color:black;" href ="index.html">Back to home</a></h1></center>
+</form> 
   
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 12</div>
-  <img src="g4.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">5 / 12</div>
-  <img src="g5.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">6 / 12</div>
-  <img src="g6.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">7 / 12</div>
-  <img src="g7.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">8 / 12</div>
-  <img src="g8.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">9 / 12</div>
-  <img src="g9.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">10 / 12</div>
-  <img src="g10.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">11 / 12</div>
-  <img src="g12.jpg" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">12 / 12</div>
-  <img src="g13.jpg" style="width:100%">
-  
-</div>
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-<span class="dot" onclick="currentSlide(4)"></span> 
-<span class="dot" onclick="currentSlide(5)"></span> 
-<span class="dot" onclick="currentSlide(6)"></span> 
-<span class="dot" onclick="currentSlide(7)"></span> 
-
-<span class="dot" onclick="currentSlide(8)"></span> 
-<span class="dot" onclick="currentSlide(9)"></span> 
-<span class="dot" onclick="currentSlide(10)"></span> 
-
-
-
-<span class="dot" onclick="currentSlide(11)"></span> 
-
-
-
-
-
-
-
-
-
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 </body>
-</html> 
+</html>
